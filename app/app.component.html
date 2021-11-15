@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<body>
+    <h1>Semester Registration System</h1>
+    <ul>
+        <li><a routerLink="todo-list">Registered Students List</a></li>
+        <li><a routerLink="todo-details">Registered Students Details</a></li>
+    </ul>
+    <router-outlet></router-outlet>
+    <h4>Data From API</h4>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Id</th>
+            <th>Manufactures</th>
+            <th>Payload Id</th>
+            <th>Wikipedia</th>
+            <th>Website</th>
+            <th>Twitter</th>
+            <th>Description</th>
+        </tr>
+        <tr *ngFor='let sp of spacex'>
+            <td>{{sp.mission_name}}</td>
+            <td>{{sp.mission_id}}</td>
+            <td>{{sp.manufacturers}}</td>
+            <td>{{sp.payload_ids}}</td>
+            <td>{{sp.wikipedia}}</td>
+            <td>{{sp.website}}</td>
+            <td>{{sp.twitter}}</td>
+            <td>{{sp.description}}</td>
+        </tr>
+    </table>
+</body>

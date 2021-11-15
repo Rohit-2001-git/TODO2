@@ -1,0 +1,18 @@
+table
+{
+    border:2px solid;
+    border-color: darkmagenta;
+    font-family: 'Times New Roman';
+    font-size: 28px;
+    border-collapse: collapse; 
+    width:95%;
+    margin:10px;
+}
+th,td
+{
+    border:2px solid;
+    border-color:darkmagenta;
+    text-align: center;
+    padding:10px;
+    margin:5px;
+}
